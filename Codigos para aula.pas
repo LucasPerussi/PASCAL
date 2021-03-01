@@ -1,18 +1,16 @@
 Program ex21 ;
-//Gustavo H Silva
 //Lucas Perussi
-//Wellington H Kania
 
 var  n1, n2, n3:Integer;
 aux, aux2, aux3, numero:integer;
 Begin
-	 Writeln ('Digite um número inteiro de três digitos: ');
+	 Writeln ('Digite um nÃºmero inteiro de trÃªs digitos: ');
 	 read (numero);
  	 while (numero < 100) or (numero > 999) do
 	 begin
 		clrscr;
-		Writeln ('Número inválido!!');
-		Writeln ('Digite um número inteiro de três digitos: ');
+		Writeln ('NÃºmero invÃ¡lido!!');
+		Writeln ('Digite um nÃºmero inteiro de trÃªs digitos: ');
 		 read (numero);
 	 end;
 	 aux := (numero mod 10);
@@ -25,14 +23,13 @@ Begin
 	 
 	 n3:= (aux2 mod 10);
 	  
-	 writeln('O inverso do valor informado é: ',n1, n2, n3);  
+	 writeln('O inverso do valor informado Ã©: ',n1, n2, n3);  
 End.
 
 
 Program ex22 ;
-//Gustavo H Silva
 //Lucas Perussi
-//Wellington H Kania
+
 
 var  dia, mes, ano:Integer;
 
@@ -42,44 +39,43 @@ Begin
 	while (dia <1) or (dia > 31) do
 	begin
 		clrscr;
-		Writeln ('data Inválida! ');
+		Writeln ('data InvÃ¡lida! ');
 		Writeln ('Informe uma dia: ');
 		read(dia);
 	end;
-  	Writeln ('Informe um mês : ');
+  	Writeln ('Informe um mÃªs : ');
   	read(mes);
             Writeln ('Informe um ano : ');
             read(ano);
-  	if (mes > 12) then Writeln ('Data Inválida!');
-  	if (ano < 1900) then  Writeln ('Data Inválida!');
+  	if (mes > 12) then Writeln ('Data InvÃ¡lida!');
+  	if (ano < 1900) then  Writeln ('Data InvÃ¡lida!');
   	if (mes =4) or (mes =6) or (mes =9) or (mes =11) and (dia > 30) then
   	begin
- 		Writeln ('Data Inválida!');
+ 		Writeln ('Data InvÃ¡lida!');
   	end;
   	if (mes =1) or (mes =3) or (mes =5) or (mes =7) or (mes =8)or (mes =10)or (mes =12) and (dia > 31) then
   	begin
-   		Writeln ('Data Inválida!');
+   		Writeln ('Data InvÃ¡lida!');
   	end;
   	if ((ano mod 4) = 0) then   //bissexto
   	begin
-  		if  (mes =2) and (dia > 29) then  Writeln ('Data Inválida!');
+  		if  (mes =2) and (dia > 29) then  Writeln ('Data InvÃ¡lida!');
   	end;
-  	if ((ano mod 4) <> 0) then   //não bissexto
+  	if ((ano mod 4) <> 0) then   //nÃ£o bissexto
   	begin
-  		if  (mes =2) and (dia > 28) then  Writeln ('Data Inválida!');
+  		if  (mes =2) and (dia > 28) then  Writeln ('Data InvÃ¡lida!');
   	end
   	else
 	begin
-		Writeln ('A data ', dia, '/', mes, '/', ano, ' está correta!');
+		Writeln ('A data ', dia, '/', mes, '/', ano, ' estÃ¡ correta!');
 	end;
 End.
 
 
 
 Program ex24 ;
-//Gustavo H Silva
 //Lucas Perussi
-//Wellington H Kania
+
 
 var  x, y, aux, i, valor:Integer;
 begin
@@ -101,9 +97,8 @@ End.
 
 
 Program ex29 ;
-//Gustavo H Silva
 //Lucas Perussi
-//Wellington H Kania
+
 
 var entrada, contador:integer;
 
